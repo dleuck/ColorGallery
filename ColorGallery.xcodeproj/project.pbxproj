@@ -11,6 +11,7 @@
 		FB12FDDE29A982680033671E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB12FDDD29A982680033671E /* ContentView.swift */; };
 		FB12FDE029A982690033671E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB12FDDF29A982690033671E /* Assets.xcassets */; };
 		FB12FDE429A982690033671E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB12FDE329A982690033671E /* Preview Assets.xcassets */; };
+		FB12FDEC29A9827D0033671E /* KiUI in Frameworks */ = {isa = PBXBuildFile; productRef = FB12FDEB29A9827D0033671E /* KiUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB12FDEC29A9827D0033671E /* KiUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = ColorGallery;
+			packageProductDependencies = (
+				FB12FDEB29A9827D0033671E /* KiUI */,
+			);
 			productName = ColorGallery;
 			productReference = FB12FDD829A982680033671E /* ColorGallery.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = FB12FDCF29A982670033671E;
+			packageReferences = (
+				FB12FDEA29A9827D0033671E /* XCRemoteSwiftPackageReference "KiUI" */,
+			);
 			productRefGroup = FB12FDD929A982680033671E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -354,6 +362,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB12FDEA29A9827D0033671E /* XCRemoteSwiftPackageReference "KiUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dleuck/KiUI";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB12FDEB29A9827D0033671E /* KiUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB12FDEA29A9827D0033671E /* XCRemoteSwiftPackageReference "KiUI" */;
+			productName = KiUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FB12FDD029A982670033671E /* Project object */;
 }
